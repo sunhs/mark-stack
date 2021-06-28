@@ -1,17 +1,15 @@
-import * as vscode from 'vscode';
-import { Stack } from 'stack-typescript';
-
+import { Position, TextDocument } from "vscode";
+import { Stack } from "stack-typescript";
 
 class MarkItem {
-    editor: vscode.TextEditor;
-    position: vscode.Position;
+  document: TextDocument;
+  position: Position;
 
-    constructor(editor: vscode.TextEditor, position: vscode.Position) {
-        this.editor = editor;
-        this.position = position;
-    }
+  constructor(document: TextDocument, position: Position) {
+    this.document = document;
+    this.position = position;
+  }
 }
-
 
 let markStack = new Stack<MarkItem>();
 

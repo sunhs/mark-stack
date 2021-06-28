@@ -2,7 +2,7 @@
   "name": "mark-stack",
   "displayName": "mark-stack",
   "description": "",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "hyesun",
   "extensionKind": [
     "ui"
